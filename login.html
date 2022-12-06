@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+<style>
+    body{
+        background: linear-gradient(to right, #1c92d2, #f2fcfe);
+        margin-left: 400px;
+        margin-top: 150px;
+    }
+    .login
+    {
+        position: relative;
+        border: 2px solid rgba(255, 255, 255, 0.05);
+        height: 400px;
+        width: 430px;
+        margin: 60px;
+        margin-left: 150px;
+        padding-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 30px;
+        backdrop-filter: blur(1px);
+        box-shadow: -10px 10px 12px #0000003b;
+    }
+    .text
+    {
+        margin-left: 60px;
+        /* margin-top: 20px; */
+    }
+    #log,#signup
+    {
+        font-family: 'Didact Gothic', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+    }
+    #log
+    {
+        color: rgb(8, 4, 4);
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: large;
+    }
+    #signup
+    {
+        color: #37c0d3c9;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    #text1,#text3,#text4
+    {
+        background-color: #fffbfb00;
+        border: 2px solid rgb(0, 0, 0);
+        height: 30px;
+        border-radius: 6px;
+        width: 300px;
+        font-size: 12px;
+        font-family: 'Didact Gothic', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        outline: none;
+        margin-bottom: 10px;
+        color: rgb(255, 251, 251);
+    }
+    ::placeholder
+    {
+        color: rgba(143, 159, 170, 0.804);
+        opacity: 1;
+    }
+    input:focus {
+        border: 3px solid #555;
+        border: 1px solid #4195fc; 
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px #4195fc; 
+    }
+    #checkmark {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #eee;
+      }
+    #sub
+      {
+        width: 200px;
+        height: 35px;
+        position: relative;
+        left: 100px;
+        top: 10px;
+        border: 2px solid #ffffff;
+        background: linear-gradient(90deg, #f9784b 0%, #f445be 100%);
+        color:white ;
+        font-size: 15px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    #sub:hover
+    {
+        box-shadow: 0px 0px 6px #4c92e8; 
+    }
+    .label {
+        padding-left: 55px;
+    }
+
+    </style>
+</head>
+<body>
+    <script>
+        function validate() {
+            var username = document.myform.name.value;
+            var number = document.myform.number.value;
+            var dob = document.myform.dob.value;
+            if (username == "" || username == null) {
+                alert("Firstname cannot be blank.");
+                return false;
+            } else if (number == "" || number == null) {
+                alert("Mobile Number can't Be Empty")
+                return false
+            } else if (dob == "" || dob == null) {
+                alert("Date Of Birth Cannot be Empty")
+                return false
+            } else return true;
+        }   
+    </script>
+    <form class="login" name="myform" action="asdddd.php" onsubmit="return validate()">
+        <div class="text" id="log">Login</div>
+        <label for="text1" class="label">Enter Your Name</label>
+        <div>
+            <input type="text" name="name" class="text" id="text1" placeholder="Enter Your name..." required>
+        </div>
+        <label for="text3" class="label" >Enter Mobile Number</label>
+        <div>
+            <input type="number" name="number" class="text" id="text3" placeholder="Enter Your Phone Number..." required>
+        </div>
+        <label for="text4" class="label">Enter Date Of Birth</label>
+        <div>
+            <input type="date" name="dob" class="text" id="text4" placeholder="DD-MM-YYYY" required>
+        </div>
+        <input type="submit" id="sub" value="submit">
+    </div>
+</body>
+</html>

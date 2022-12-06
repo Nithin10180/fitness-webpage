@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(bg.jpeg) ;
+            background-size: 1600PX 500px;
+            background-repeat: no-repeat;
+            height: 1000px;
+            background-color: rgb(214, 250, 255);
+            height: 1000px;
+        }
+        .navbar{
+            margin-top: 20px;
+            display: block;
+        }
+        #na{
+            margin-left: 500px;
+        }
+        .signin{
+            float: right;
+            padding: 5px;
+            text-decoration: none;
+            background-color: rgb(38, 0, 49);
+            color: aliceblue;
+            border: 2px solid white;
+            font-size: medium;
+        }
+        .button{
+            text-decoration: none;
+            background-color: rgb(188, 188, 188);
+            margin: 10px;
+            padding: 5px;
+            font-size: medium;
+            color: black;
+            border: 1px solid black;
+        }
+        .button:hover,.submit:hover{
+            background-color: aquamarine;
+        }
+        .submit{
+            text-decoration: none;
+            background-color: rgb(254, 246, 10);
+            margin: 10px;
+            padding: 5px;
+            width: 500px;
+            font-size: medium;
+            color: black;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        #search{
+            width: 450px;
+        }
+        .heading{
+            font-size: 40px;
+            text-align: center;
+            color: antiquewhite;
+            margin-top: 300px;
+        }
+        .input {
+            width: 500px;
+            height: 30px;
+        }
+    
+    .input1{
+        margin-top: 100px;
+        float: left;
+        width: 40%;
+    }
+    .label{
+        font-size: large;
+        margin-top: 5px;
+    }
+    .maps{
+        float: right;
+        width: 40%;
+        margin-top: 100px;
+        margin-right: 200px;
+        
+    }
+    #mapswriting{
+        margin-left: 200px;
+    }
+    #mapswriting1{
+        margin-left: 200px;
+        font-size: larger;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        function validate() {
+            var username = document.myform.name.value;
+            var mobile = document.myform.mobile.value;
+            var email = document.myform.email.value;
+            var subject = document.myform.sub.value;
+            if (username == "" || username == null) {
+                alert("Firstname cannot be blank.");
+                return false;
+            } else if (email == "" || email == null) {
+                alert("Email cannot be blank.");
+                return false;
+            } else if (mobile == "" || mobile == null) {
+                alert("Mobile Number can't Be Empty")
+                return false
+            } else if (subject == "" || subject == null) {
+                alert ("Address Can't Be Empty")
+                return false
+            } else return true;
+        }
+    </script>
+    <nav class="navbar">
+        <input type="text" id="search" placeholder="search here">
+        <span id="na">
+            <a href="html project.html" id="cont" class="button">Home</a>
+            <a href="about.html" id="ab"  class="button">About</a>
+            <a href="login.html" class="signin">Log in</a>
+            <a href="register.html" class="signin">Register</a>
+        </span>
+    </nav>
+    <h1 class="heading">
+        Contact Support<br>
+        WE WOULD LOVE HEAR TO YOU
+    </h1>
+    <form class="input1" name="myform" onsubmit="return validate()">
+        <div class="select">
+            <label for="hom" class="label">Select Department</label><br>
+            <select name="Home" id="hom" class="input">
+                <option class="sec" value="home">Trainers</option>
+                <option class="sec" value="ser" >Reception</option>
+                <option class="sec" value="branch">Security</option>
+                <option class="sec" value="time" >Miss Behaviour</option>
+                <option class="sec" value="sig" >Services</option>
+            </select><br>
+        </div>
+        <br>
+        <label for="name" class="label">Enter Name:</label>
+        <div> 
+            <input type="text" id="name" name="name" placeholder="Name" class="input">
+        </div> <br>
+        <label for="num" class="label">Enter Mobile Number:</label>
+        <div>
+            <input type="number" id="num" name="mobile" placeholder="1234560789" class="input">
+        </div><br>
+        <label for="email" class="label">Enter Email</label>
+        <div>
+            <input type="email" name="email" id="email" name="email" placeholder="asdf@gmail.com" class="input">
+        </div><br>
+        <label for="sub" class="label">Subject</label>
+        <div>
+        <textarea rows="3" cols="66" class="subject" name="sub" id="sub"></textarea>
+        </div>
+        <div><br>
+        <input type="submit" value="submit">
+        </div>
+    </form>
+    <div class="maps">
+        <img src="contactmap.png" alt="Maps">
+        <h2 id="mapswriting">
+            Get In Touch
+        </h2>
+        <h3 id="mapswriting1">
+            we are always ready to hear from you.
+        </h3>
+        <p id="mapswriting" style="font-size:20px ;">
+            Address: Lovely Professional University <br>
+            Jalandhar,Phagwara<br>
+            Punjab <br>
+            Email: fitnesscenter@gmail.com <br>
+            Mobile Number:8106574874
+        </p>
+    </div>
+
+</body>
+</html>

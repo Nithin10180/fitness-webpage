@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General package</title>
+    <style>
+        body {
+            padding: 25px;;
+            border: 2px black;
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            font: size 22px;;
+            color: rgb(31, 53, 62);
+        }
+        div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function validate() {
+            var username = document.myform.first.value;
+            var email = document.myform.email.value;
+            var password = document.myform.pass.value;
+            var cpassword = document.myform.cpass.value;
+            var gender = document.myform.Gender.value;
+            var mobile = document.myform.mobile.value;
+            var address = document.myform.address.value;
+            if (username == "" || username == null) {
+                alert("Firstname cannot be blank.");
+                return false;
+            } else if (email == "" || email == null) {
+                alert("Email cannot be blank.");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be of atleast 6 digits");
+                return false;
+            } else if (password != cpassword) {
+                alert("Password doesn't matched.");
+                return false;
+            } else if (gender == "" || username == null) {
+                alert("gender can't be empty");
+                return false
+            } else if (mobile == "" || mobile == null) {
+                alert("Mobile Number can't Be Empty")
+                return false
+            } else if (address == "" || address == null) {
+                alert ("Address Can't Be Empty")
+                return false
+            } else return true;
+        }
+    </script>
+    <form name="myform" action="asdd.php" onsubmit="return validate()">
+        <label for="First Name">Enter First Name:</label>
+        <div>
+            <input type="text" name="first" id="first name">
+        </div>
+        <label for="last name">Enter Last Name:</label>
+        <div>
+            <input type="text" name="last" id="last name">
+        </div>
+        <label for="gender">Select Gender:</label>
+        <div>
+            Male <input type="radio" name="Gender" class="gender"> Female <input type="radio" name="Gender" class="gender"> Others <input type="radio" name="Gender" class="gender" >
+        </div>
+        <label for="size">Body Shape:</label>
+        <div>
+            Large <input type="radio" name="Size" class="size"> Medium <input type="radio" name="Size" class="size"> Fit <input type="radio" name="Size" class="size">
+        </div>
+        <label for="no">Enter Mobile Number:</label>
+        <div>
+            <input type="number" name="mobile" id="no">
+        </div>
+        <label for="email">Enter Your Email Id:</label>
+        <div>
+            <input type="email" name="email" id="email">
+        </div>
+        <label for="date">Select Start Date:</label>
+        <div>
+            <input type="date" id="date">
+        </div>
+        <label for="password">Enter Password</label>
+        <div>
+            <input type="password" name="pass" id="password">
+        </div>
+        <label for="cpassword">Confirm Password</label>
+        <div>
+            <input type="password" name="cpass" id="cpassword">
+        </div>
+        <div>
+            Enter Your Address: <br><textarea name="address" rows="4" cols="80"></textarea>
+        </div>
+        <div>
+            <input type="reset" value="Reset now">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

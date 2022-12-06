@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Project.com</title>
+    <style>
+       
+        body{
+            background-repeat: no-repeat;
+            background: linear-gradient(to right, #642b73, #c6426e);
+        }
+        .navbg{
+            padding: 3px;
+            width: 100%;
+            display: inline-block;
+        }
+        .head1{
+            float: left;
+            width: 15%;
+        }
+        .head2{
+            text-align: center;
+            margin-right: 250px;
+            color: antiquewhite;
+            font-size: 35px;
+        }
+        .navbar{
+            margin-top: 20px;
+            /* background-color: rgb(0, 150, 78); */
+            display: block;
+        }
+        .button,.button1{
+            text-decoration: none;
+            background-color: rgb(188, 188, 188);
+            margin: 10px;
+            padding: 5px;
+            font-size: medium;
+            color: black;
+            border: 1px solid black;
+        }
+        .button:hover,.button1:hover{
+            background-color: aquamarine;
+        }
+        .button1{
+            margin-left: 200px;
+        }
+        #search{
+            width: 25%;
+            font-size: medium;
+        }
+        .signin{
+            float: right;
+            margin: 5px;
+            margin-top: 10px;
+            padding: 5px;
+            text-decoration: none;
+            background-color: rgb(122, 0, 155);
+            color: aliceblue;
+            border: 2px solid white;
+            font-size: medium;
+        }
+        #na{
+            margin-left: 500px;
+        }
+        h3{
+            color: aliceblue;
+        }
+        #para1{
+            border: 2px solid rebeccapurple;
+            background-color: #ffffff;
+            font-size: medium;
+            margin: 10px;
+            margin-top: 35px;
+            float: left;
+            padding-right: 10px;
+            width: 47%;
+            font-size: 20px;
+        }
+        #para2{
+            background-color: #ffffff;
+            border: 2px solid rebeccapurple;
+            font-size: medium;
+            margin: 10px;
+            margin-top: 35px;
+            float: left;
+            padding-right: 10px;
+            width: 47%;
+            font-size: 20px;
+        }
+        
+        h1{
+            color: aquamarine;
+            text-align: center;
+        }
+        #firstpic1{
+        padding-left: 80px;
+        display: inline;
+        }
+        .container{
+            padding-bottom: 50px;
+        }
+        .contain{
+            margin-left: 490px;
+            font-size: larger;
+            font-weight: 100;
+        }
+        .as{
+            color: antiquewhite;
+            
+        }
+        .asdf{
+            background: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 15px;
+            height: 30px;
+            margin-top: 15px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <script >
+        function validate() {
+            var username = document.myform.name.value;
+            var number = document.myform.number.value;
+            if (username == "" || username == null) {
+                alert("Firstname cannot be blank.");
+                return false;
+            } else if (number == "" || number == null) {
+                alert("Mobile Number can't Be Empty")
+                return false
+            } else return true;
+        }   
+    </script>
+    
+    <div class="navbg">
+    <span class="head1"><img src="logo fitness.png" alt="gym logo" height="75px" width="75px"></span>
+    <h2 class="head2">Fitness Center</h2>
+    <nav class="navbar">
+        <input type="text" id="search" placeholder="search here">
+        <span id="na">
+            <select name="Home" id="hom" class="button">
+                <option class="sec" value="home">Home</option>
+                <option class="sec" value="ser" >Services</option>
+                <option class="sec" value="branch">Branches</option>
+                <option class="sec" value="time" >Timings</option>
+                <option class="sec" value="sig" >Sign In</option>
+            </select>
+            <a href="about.html" id="ab"  class="button">About</a>
+            <a href="contact.html" id="cont" class="button">Contacts</a>
+            <a href="login.html" class="signin">Log in</a>
+            <a href="register.html" class="signin">Register</a>
+        </span>
+    </nav>
+    
+    </div>
+
+    </div>
+    <div id="firstpic1">
+        <img src="smallpicture1.jpg" >
+    </div>
+    <h1>
+        Benefits Of Our Gym
+    </h1>
+    <div id="para1">
+        <br>
+         <ul>
+            <li>
+                 Qualified trainers <br>
+                  We're sure that one time or another, you've been fascinated at how a trainer facilitates class and engages learners. You also most likely observed some of the best qualities of a good trainer and already somewhat have an idea of what attributes make a trainer great at their work. <br>
+            </li>
+            <li>
+            Individual training <br>
+            A personal trainer is an individual certified to have a varying degree of knowledge of general fitness involved in exercise prescription and instruction. They motivate clients by setting goals and providing feedback and accountability to clients.  <br> <br>
+            </li> <br>
+            <li>
+                Multiple classis <br> We provides multiple classes to our clints Zumba, Aerobics, Kickboxing, Strenght, Power yoga, Free weight. <br>
+            </li> <br>
+            <li>
+                Free Wi-Fi Zone <br>
+        As Having Membership in our Gym we provide free high speed wifi with unlimted net ussage without any interuption. <br>
+            </li>
+        </ul>
+    </div>
+   
+    <div id="para2" >
+        <br>
+        <ul>
+            <li>Men and Women's changing rooms<br>
+            We provide both Men and Womens's changing room separetly so that they are comfortable with dresses.<br> <br><br> 
+            </li> 
+            <li> Hightech gym <br>
+            Monitoring performance during the one-hour workout, from wearable devices to projection screens, which help in getting solidity from long slogans on cardio devices, make use of modern technology to enhance the experience of today's gym exercise.  <br> <br>
+            </li>
+
+            <li> Complimentary Drinks<br>
+            We provide Complimentary drinks so that the people be motivated to workout and maintain health. <br> <br>
+            </li>
+
+            <li> Towels and Lockers<br>
+            Towels and Lockers are provided by Gym itself so that if they have any belongings yhey can keep it safe and towels are provided by us. <br>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <form class="container" name="myform" onsubmit="return validate()">
+        <h3 style="text-align:center ;">Join The Best GYM Now</h3>
+        <form action="nofile.php" class="inp">
+        <div class="contain">
+            <div>
+            <label for="nam" class="as" >Enter Your Name</label>
+            </div>
+            <div>
+                <input type="text" id="nam" class="asdf" name="name" style="width:550px ;" required>
+                <br><br>
+            </div>
+            <div>
+            <label for="bran"class="as" >Select Your Branch</label>
+            </div>
+            <div>
+                <select name="mybranch" id="branch" name="branch" class="asdf" aria-placeholder="Select Branch" style="width:550px ;">
+                    <option value="amr" >Lovely Professional University</option>
+                    <option value="lud" >Ludhiana</option>
+                    <option value="jal" >Jalndhar</option>
+                    <option value="pha" >Phagwara</option>
+                    <option value="law" >Law Gate</option>
+                    <option value="chat" >Chattisgardh</option>
+                </select>
+            </div>
+            <br><br>
+            <div>
+            <label for="mob" class="as">Enter Mobile Number</label><br>
+            </div>
+            <div>
+                <input type="number" name="number" class="asdf" style="width:550px ;" required>
+            </div>
+            <br><br>
+            <input type="submit" value="Register">
+        </div>
+        </form>
+    </form>
+ 
+
+</body>
+</html>

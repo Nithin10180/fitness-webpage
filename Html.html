@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <style>
+        body{
+            background-color: rgb(152, 250, 255);
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-size: 1px;
+            height: 100px;
+            background-repeat: no-repeat;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .button{
+            background-color: green;
+            border:solid black;
+            color: wheat;
+            padding: 20px;
+            text-align: center;
+            text-decoration:none;
+            display: inline-flex;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        h1{
+            color:rebeccapurple;
+            text-align: center;
+            font-size: 40px;
+            border: 5px solid black;
+            height: 100px;
+            width: 600px;
+            border-radius: 30px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        select,label{
+            font-size: large;
+        }
+        .bg{
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome TO MY Gym</h1>
+    <label for="branch">Select Branch</label>
+    <div>
+    <select name="mybranch" id="branch">
+        <option value="amr" >Amristar</option>
+        <option value="lud" >Ludhiana</option>
+        <option value="jal" >Jalndhar</option>
+        <option value="pha" >Phagwara</option>
+        <option value="law" >Law Gate</option>
+        <option value="chat" >Chattisgardh</option>
+        <option value="lpu" >Lovely Proffesional University</option>
+    </select>
+    </div>
+    <div class="container">
+        <div id="normal" class="gym">
+            <h2>General Package</h2>
+            <table id="general" class="table">
+                <thead>
+                    <tr>
+                        <th>Facilities    </th>
+                        <th>Availability  </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lockers</td>
+                        <td>U+274C</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+        </div>
+    </div>
+    <a href="normal.html" class="button">general package</a>
+    <a href="premium.html" class="button">premium package</a>
+    <a href="vip.html" class="button">Vip package</a>
+</body>
+</html>
